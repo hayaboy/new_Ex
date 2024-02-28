@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width"> -->
+	<title>샘플</title>
+	<link rel="stylesheet" href="grid-guide.css">
+	<style>
+	
+	/* 브라우저 화면 너비가 768px(브레이크 포인트) 이상일 때는 가로 정렬 , 이하일 때 가로 정렬 해제 */
+	@media(min-width:768px){
+		.boxA:after {
+			content: "";
+			display: block;
+			clear: both
+		}
+
+		.box2 {
+			float: left;
+			width: 70%; 
+		}
+
+		.box3 {
+			float: left;
+			width: 30%; 
+		}
+	}
+
+		/* .boxA:after {
+			content: "";
+			display: block;
+			clear: both
+		}
+
+		.box2 {
+			float: left;
+			width: 100%; 
+			 margin-right: -300px; 
+			 padding-right: 100px; 
+			
+		}
+
+		.box3 {
+			/* float: right; */
+			float: left;			
+			width: 300px
+		} */
+	</style>
+</head>
+
+<body>
+
+
+	<div class="box1">
+		BOX1
+	</div>
+
+	<div class="boxA">
+		<div class="box2">
+			<p>BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2
+				BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2
+				BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2
+				BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2
+				BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 BOX2 </p>
+		</div>
+
+		<div class="box3">
+			BOX3
+		</div>
+	</div>
+
+	<div class="box4">
+		BOX4
+	</div>
+
+
+</body>
+
+</html>

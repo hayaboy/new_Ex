@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+      /* inline은 인라인 요소처럼 동작하며 다른 인라인 요소와 같은 줄에 위치하고
+      inline-block은 인라인 요소처럼 동작하면서 블록 요소처럼 여백과 크기를 가집니다 */
+    
+    .inline-example {
+      display: inline;
+      background-color: red;
+      padding: 10px;
+      width: 500px;
+      height:  500px;
+    }
+
+    .inline-block-example {
+      display: inline-block;
+      background-color: blue;
+      padding: 10px;
+      width: 500px;
+      height:  500px;
+    }
+      
+    </style>
+</head>
+
+<body>
+    <span class="inline-example">Inline</span> 텍스트 다음에 나옴
+    <div class="inline-block-example">Inline Block</div> 텍스트 다음에 나옴
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        /* li {
+            color: blue;
+        } */
+        /* li:nth-child(3){
+            color: blue;
+        } */
+
+        /* li:first-child{
+            color: blue;
+        }
+
+        li:last-child{
+            color: blue;
+        } */
+
+        /* li:nth-child(odd){
+            color: blue;
+        }
+
+        li:nth-child(even){
+            color: red;
+        } */
+
+
+        /* li:nth-child(2n+1){
+            color: red;
+        }
+
+        li:nth-child(2n){
+            color: blue;
+        } */
+
+
+        /* li:nth-last-child(3){
+            color: blue;
+        } */
+
+         * {
+            margin: 0px;
+            padding: 0px;
+           
+        }
+
+        body{
+               padding: 10px;
+            text-align: center;
+        }
+
+        /* overflow
+           <ul> 요소의 내용이 부모 요소에서 벗어날 경우에 대한 처리를 정의합니다. 
+           hidden
+           요소의 내용이 부모 요소의 경계를 벗어날 경우, 해당 내용을 숨기고 잘라내라는 지시
+            */
+
+
+         /* ul{
+            overflow: hidden;  
+        }  */
+
+
+        li {
+            float: left;
+            list-style-type: none;
+            align-items: center;
+            font-size: 1.5em;
+            margin: 10px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+
+        li:nth-child(2n){
+            background-color: aqua;
+        }
+
+        li:nth-child(2n+1){
+            background-color: blue;
+        }
+
+
+        li:first-child{
+            border-radius: 10px 0px 0px 10px  ;
+        }
+
+        li:last-child{
+            border-radius: 0px 10px 10px 0px  ;
+        }
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <ul>
+        <li>첫 번째</li>
+        <li>두 번째</li>
+        <li>세 번째</li>
+        <li>네 번째</li>
+        <li>다섯 번째</li>
+        <li>여섯 번째</li>
+        <li>일곱 번째</li>
+    </ul>
+
+</body>
+
+</html>

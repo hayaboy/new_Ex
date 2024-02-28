@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+             position: absolute; 
+        }
+
+        .box:nth-child(1) {
+            background-color: red;
+            width: 120px;
+            height: 120px;
+            left: 50px; top: 50px;
+            z-index: 10;
+        }
+
+        .box:nth-child(2) {
+            background-color: green;
+            width: 140px;
+            height: 140px;
+            left: 130px; top: 130px;
+            z-index: 20;
+        }
+
+        .box:nth-child(3) {
+            background-color: blue;
+            width: 130px;
+            height: 130px;
+            left: 100px; top: 100px;
+            z-index: 25;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

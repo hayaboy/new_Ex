@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Daily Chart</title>
+    <!-- Chart.js CDN 추가 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="./chart.js"></script>
+</head>
+<body>
+    <!-- 차트를 그릴 캔버스 -->
+    <canvas id="stockChart"></canvas>
+
+    <script>
+        // 주식 데이터 (가상의 데이터, 실제 데이터로 대체 필요)
+        const stockData = [
+            { date: '2024-01-01', open: 100, high: 120, low: 95, close: 110 },
+            // ... 다른 일자의 데이터 추가
+        ];
+
+        // 차트를 그릴 캔버스 선택
+        const ctx = document.getElementById('stockChart').getContext('2d');
+
+        // Chart.js를 사용하여 차트 생성
+        const stockChart = new Chart(ctx, {
+            type: 'candlestick',
+            data: {
+                datasets: [{
+                    data: stockData.map(item => ({
+                        t: new Date(item.date),
+                        o: item.open,
+                        h: item.high,
+                        l: item.low,
+                        c: item.close
+                    })),
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            unit: 'day'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

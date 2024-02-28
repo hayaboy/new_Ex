@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        //0 이상 1 미만의 구간
+
+
+
+        let secret = Math.floor(Math.random() * 100) + 1;
+        window.document.write("정답", secret);
+
+        for (let i = 0; i < 10; i++) {
+            let guess = Number(window.prompt("당신이 생각하는 숫자는?"));
+            document.write("추측한 수", guess);
+
+
+            if (guess > secret) {
+                // console.log("당신이 생각한 숫자가 정답보다 큽니다.");
+                document.write("당신이 생각한 숫자가 정답보다 큽니다.");
+            } else if (guess < secret) {
+                document.write("당신이 생각한 숫자가 정답보다 작습니다.");
+            } else {
+                document.write("정답");
+                //  document.write(`시도횟수는 ${cnt}`);
+                //  break;
+            }
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

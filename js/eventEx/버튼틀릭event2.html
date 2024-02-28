@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script>
+          
+            //화살표 함수 
+            //  let goodJob= ()  => { window.alert('잘 하셨어요222'); }
+             let goodJob= ()  => { 
+                // window.location = "http://www.naver.com";
+                // window.location = "http://www.coupang.com";
+                window.location = "http://www.interpark.com";
+                
+            }
+
+            let goodJob2= ()  => { 
+               setTimeout(goodJob, 3000);
+            }
+             
+        </script>
+    </head>
+    <body>
+       
+        <input type="button"  value="네이버로 가자" onclick="goodJob()"   /> 
+       
+       <!-- 3초 후에 쿠팡 가자 -->
+       <input type="button"  value=" 3초 후에 쿠팡 가자" onclick="goodJob2()"   /> 
+
+    </body>
+</html>

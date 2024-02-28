@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>샘플</title>
+    <link rel="stylesheet" href="../layoutEx/modern-web-design-book-master/1/grid-guide-rwd.css">
+
+    <style>
+
+        /* 미디어쿼리   : @media(){}      
+         768px(break point)
+         767px 이하일 때는 스타일 시트가 적용되지 않아 가로 정렬이 해제가 됨
+        */
+
+        @media(min-width:768px) {
+
+            .boxA::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            .box2 {
+                float: left;
+                width: 70%;
+            }
+
+            .box3 {
+                float: left;
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box1">
+        BOX1
+    </div>
+
+    <div class="boxA">
+        <div class="box2">
+            BOX2
+        </div>
+
+        <div class="box3">
+            BOX3
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>샘플</title>
+	<link rel="stylesheet" href="grid-guide.css">
+	<style>
+		.boxA::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.box1,
+		.box2,
+		.box3,
+		.box4 {
+			float: left;
+			width: 50%;
+		}
+
+		/* .box1 {
+			float: left;
+			width: 50%;
+		} */
+
+		/* float을 지정한 박스는  자신이 가진 너비 만큼을 차지하며, 순서대로 왼쪽에 붙어 위츠를 잡습니다. 따라서 가로로 정렬
+		float을 지정한 박스는 floating box라는 특수한 박스로 처리로 됩니다. 플로팅 박스는 다른 박스의 존재를 인식하지 못함
+		*/
+
+		/* .box2 {
+			float: left;
+			width: 50%;
+		} */
+
+
+		/* .box3 {
+			float: left;
+			width: 50%;
+		} */
+
+		/* * .box4 {
+			float: left;
+			width: 50%;
+		} */
+
+		/* * .box4{
+		clear: both;
+		} */
+	</style>
+</head>
+
+<body>
+	<div class="boxA">
+		<div class="box1">
+			BOX1
+		</div>
+		<div class="box2">
+			BOX2
+		</div>
+	</div>
+
+
+	<div class="boxA">
+		<div class="box3">
+			BOX3
+		</div>
+
+		<div class="box4">
+			BOX4
+		</div>
+	</div>
+
+</body>
+
+</html>
