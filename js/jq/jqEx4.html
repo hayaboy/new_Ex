@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
+    <script>
+
+       
+        // 전체를 잡아서 두께가 1px인 파란색 실선을 생성
+        
+        $(
+            function () {
+                 $('*').css('border','1px solid blue');
+            }
+            
+        );
+
+
+        // 선택자 부분만 노란색 배경과 2px의 두께의 빨간색 실선
+
+
+        //체이닝 기법
+        // $(
+        //     function () {
+        //       $('.sel').css('backgroundColor','yellow').css('border','2px dashed red');
+        //     }
+            
+        // );
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>제이쿼리</h1>
+    <!-- <h2 id="sel">선택자</h2> -->
+    <h2 class="sel">선택자1</h2>
+    <h2 class="sel">선택자2</h2>
+    <h3>직접선택자</h3>
+</body>
+
+</html>

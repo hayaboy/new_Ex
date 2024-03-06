@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--   
+            //CSS 선택자로 jQuery 객체를 생성
+            $('h1')       
+
+
+            //HTML 문자열로 jQuery 객체 생성
+            $('<h2></h2>')
+            
+            
+        -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+           
+        <script>
+
+            $(document).ready(  // 문서 객체의 생성 완료 시점을 잡는 이벤트 연결
+
+                function () {
+                    // $('h1').css("backgroundColor", "red");                         
+                    $('#content1').css("color", "blue");                         
+                    $('#content2').css("color", "red");                         
+                    $('.content3').css("color", "green");                         
+                }
+            );
+          
+            
+
+        </script>
+
+    </head>
+    <body>
+        <h1>안녕</h1>
+        
+        <p id="content1">
+            오늘 점심을 뭐 먹을까에 대한 고민이 있다.1
+            한번 생각해 봅시다.
+        </p>
+
+        <p id="content2">
+            오늘 점심을 뭐 먹을까에 대한 고민이 있다.2
+            한번 생각해 봅시다.
+        </p>
+
+        <hr>
+        <p class="content3">
+            오늘 점심을 뭐 먹을까에 대한 고민이 있다.3
+            한번 생각해 봅시다.
+        </p>
+
+        <p class="content3">
+            오늘 점심을 뭐 먹을까에 대한 고민이 있다.3
+            한번 생각해 봅시다.
+        </p>
+    </body>
+</html>
